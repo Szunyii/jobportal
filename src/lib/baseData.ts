@@ -1,0 +1,18 @@
+export const jobsCatergory = [
+  { name: "IT BIG DATA", category: 1 },
+  { name: "Finance, Economics", category: 2 },
+  { name: "IT Operations", category: 3 },
+  { name: "Law/Compliance", category: 4 },
+  { name: "Management", category: 5 },
+  { name: "Marketing, PR", category: 6 },
+  { name: "Office work", category: 7 },
+  { name: "Engineer", category: 8 },
+  { name: "Sales", category: 9 },
+  { name: "IT Development", category: 10 },
+  { name: "IT Project Management", category: 11 },
+  { name: "Other", category: 12 },
+  { name: "HR (Human Resources)", category: 13 },
+  { name: "Logistics, Procurement", category: 14 },
+  { name: "Education", category: 15 },
+  { name: "Design", category: 16 },
+];
