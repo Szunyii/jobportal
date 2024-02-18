@@ -1,8 +1,8 @@
-"use client";
-
 import SearchBar from "@/components/SearchBar";
+import { Button } from "@/components/ui/button";
 
-export default function HomePage() {
+export default async function HomePage() {
+  // console.log(session?.user);
   return (
     <main className="min-h-screen">
       <div className="w-full p-3">
