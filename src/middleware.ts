@@ -3,8 +3,12 @@ import { authMiddleware } from "@clerk/nextjs";
 // This example protects all routes including api/trpc routes
 // Please edit this to allow other routes to be public as needed.
 // See https://clerk.com/docs/references/nextjs/auth-middleware for more information about configuring your Middleware
-export default authMiddleware({});
+//ezzel tudom kiofolni  azt hogy nem enged valahova
+export default authMiddleware({
+  publicRoutes: ["/", "/contact"],
+});
 
+//egyszerűbb ha csökkentem a protected routeokat majd
 export const config = {
-  matcher: ["/admin(.*)", "/(api|trpc)(.*)"],
+  matcher: ["/((?!.+\\.[\\w]+$|_next).*)", "/", "/(api|trpc)(.*)"],
 };

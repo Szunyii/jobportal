@@ -20,3 +20,10 @@ export async function getRandom() {
 
   return "f";
 }
+
+export function toSlug(str: string) {
+  return str
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/[^\w-]+/g, "");
+}

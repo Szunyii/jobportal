@@ -22,7 +22,7 @@ const Companiepage = async () => {
         <p className="font-medium">Make an account and post job immediately</p>
         <Link
           className={cn(buttonVariants({ size: "lg" }), "mt-5")}
-          href="/companies/signup"
+          href="/companies/sign-up"
         >
           Make an account
         </Link>

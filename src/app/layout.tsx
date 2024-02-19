@@ -6,6 +6,7 @@ import Decor from "@/components/Decor";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/toaster";
 import { ClerkProvider } from "@clerk/nextjs";
+import ReactQueryProvider from "@/components/ReactQueryProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,14 +22,16 @@ export default async function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={inter.className}>
-          <Decor />
-          <Navbar />
-          {children}
-          <Toaster />
-        </body>
-      </html>
+      <ReactQueryProvider>
+        <html lang="en">
+          <body className={inter.className}>
+            <Decor />
+            <Navbar />
+            {children}
+            <Toaster />
+          </body>
+        </html>
+      </ReactQueryProvider>
     </ClerkProvider>
   );
 }

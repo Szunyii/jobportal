@@ -15,7 +15,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { jobsCatergory } from "@/lib/baseData";
+import { jobsCatergory } from "@/lib/jobCategory";
 
 const SearchBar = () => {
   const router = useRouter();

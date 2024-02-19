@@ -1,5 +1,6 @@
 import SearchBar from "@/components/SearchBar";
 import { Button } from "@/components/ui/button";
+import { currentUser } from "@clerk/nextjs";
 
 export default async function HomePage() {
   // console.log(session?.user);

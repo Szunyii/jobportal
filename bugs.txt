@@ -1,0 +1,1 @@
+a reload a nav jobb oldali komponensét rosszúl tölti
